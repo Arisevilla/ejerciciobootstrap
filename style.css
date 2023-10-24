@@ -1,6 +1,12 @@
-*{
-
+/* Paleta de colores*/
+:root{
+  --nintendo-red: #e60013;
+  --supernova-yellow: #ffcd05;
+  --dodger-blue: #1f8bff;
+  --blazer-orange: #ff6a00;
+  --sushi-green: #8bc63f;
 }
+
 
 body{
 background: url(img/ninbg.jpg)no-repeat center center fixed; 
@@ -12,7 +18,8 @@ background: url(img/ninbg.jpg)no-repeat center center fixed;
 
 h1,h2, h3, h4, h5, h6 {
   font-family: 'Press Start 2P', cursive;
-  color: #ffffff;
+  /*Cambio color */
+  color: var(--blazer-orange);
   width:100%;
   margin: auto;
 }
@@ -26,7 +33,7 @@ nav{
 }
 p{
   font-family: 'Roboto', sans-serif;
-  color: #ffffff;
+  color: white;
   padding: 20px;
 }
 
@@ -61,7 +68,7 @@ input[type=submit]{
   border: none;
   padding: 5px 10px;
   border-radius: 10px;
-  background-color: #ff9185;
+  background-color: var(--dodger-blue);
   margin-top: 15px;
 }
 
@@ -91,4 +98,33 @@ input[type=submit]{
 .jumbotron {
   background-image: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2020%2F03%2Fswitch-ecomm-2000.jpg");
   background-size: contain;
+}
+
+/* cambio color párrafo de autor*/
+.idp{
+  color: var(--supernova-yellow)
+}
+
+/*cambio de color de background en nav*/
+nav{
+  background-color: dodgerblue;
+}
+
+/*cambio de color a links de nav*/
+.nav-link{
+  color:white
+}
+
+/*cambio de color de navbar titulo*/
+.navbar-brand{
+  color:white
+}
+
+input{
+  border-radius: 15px;
+  padding: 7px;
+}
+textarea{
+  border-radius: 15px;
+  padding: 7px;
 }
